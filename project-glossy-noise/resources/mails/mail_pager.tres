@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="MailData" format=3 uid="uid://dnxu07rkyxpld"]
+
+[ext_resource type="Script" uid="uid://dnq3u55ksoef6" path="res://resources/MailData.gd" id="1_rx5go"]
+
+[resource]
+script = ExtResource("1_rx5go")
+mail_id = "mail_pager"
+sender = "Иван Петрович, кв. 42"
+subject = "Пейджер сдох"
+body = "Здравствуй, мастер. Мой старый пейджер перестал работать. Экран потух, кнопки не нажимаются. Посмотри, будь добр."
+device_id = "pager_mute"
+metadata/_custom_type_script = "uid://dnq3u55ksoef6"

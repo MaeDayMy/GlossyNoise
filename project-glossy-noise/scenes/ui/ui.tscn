@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://c35vce5uncrfw"]
+
+[node name="UI" type="CanvasLayer" unique_id=1093406101]
+
+[node name="TimeLabel" type="Label" parent="." unique_id=1598638688]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="MoneyLabel" type="Label" parent="." unique_id=1762514826]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="InventoryContainer" type="HBoxContainer" parent="." unique_id=1528710455]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Slot0" type="Button" parent="InventoryContainer" unique_id=1478932398]
+layout_mode = 2
+
+[node name="Slot1" type="Button" parent="InventoryContainer" unique_id=1375378479]
+layout_mode = 2
+
+[node name="Slot2" type="Button" parent="InventoryContainer" unique_id=414050952]
+layout_mode = 2
+
+[node name="Slot3" type="Button" parent="InventoryContainer" unique_id=496536493]
+layout_mode = 2
+
+[node name="Slot4" type="Button" parent="InventoryContainer" unique_id=1438915932]
+layout_mode = 2
+
+[node name="Slot5" type="Button" parent="InventoryContainer" unique_id=1104351793]
+layout_mode = 2
+
+[node name="StressBackground" type="ColorRect" parent="." unique_id=107115805]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 210.0
+offset_bottom = 30.0
+color = Color(0, 0, 0, 1)

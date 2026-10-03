@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MailData" format=3 uid="uid://ch4xonfdlucff"]
+
+[ext_resource type="Script" uid="uid://dnq3u55ksoef6" path="res://resources/MailData.gd" id="1_o5g6j"]
+
+[resource]
+script = ExtResource("1_o5g6j")
+mail_id = "mail_calculator"
+sender = "Бухгалтерия ЖЭКа"
+subject = "Калькулятор сломался"
+body = "Наш калькулятор выдаёт странные цифры. Особенно когда вводишь \"0000\". Почини, будь добр."
+device_id = "calculator_debt"
+reward = 100
+metadata/_custom_type_script = "uid://dnq3u55ksoef6"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="FaultData" format=3 uid="uid://kyeionokotew"]
+
+[ext_resource type="Script" uid="uid://bn42vd4a62esf" path="res://resources/FaultData.gd" id="1_8vsy7"]
+
+[resource]
+script = ExtResource("1_8vsy7")
+fault_id = "dead_battery"
+fault_name = "Севшая батарейка"
+required_tool = "screwdriver"
+repair_steps = Array[String](["open_cover", "replace_battery", "close_cover"])
+penalty_for_ignore = 5
+stress_on_error = 3
+metadata/_custom_type_script = "uid://bn42vd4a62esf"

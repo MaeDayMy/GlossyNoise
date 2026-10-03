@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="MailData" format=3 uid="uid://cmh522y4tmbfp"]
+
+[ext_resource type="Script" uid="uid://dnq3u55ksoef6" path="res://resources/MailData.gd" id="1_62qif"]
+
+[resource]
+script = ExtResource("1_62qif")
+mail_id = "mail_glitchie_joke"
+sender = "Глитчи"
+subject = "Не открывай это письмо"
+body = "Ты его открыл.Я так и знал.Ладно, раз уж открыл — привет. Это я, Глитчи. Пишу сам себе, чтобы проверить, работает ли почтовый клиент.Работает. Отлично. Теперь ты знаешь, что я умею писать письма. Не благодари.P.S. Не отвечай на это письмо. Я не читаю ответы. Я их удаляю."
+reward = 0
+metadata/_custom_type_script = "uid://dnq3u55ksoef6"

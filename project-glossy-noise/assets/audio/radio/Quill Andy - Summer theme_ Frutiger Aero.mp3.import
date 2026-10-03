@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bpjldvjtcwvve"
+path="res://.godot/imported/Quill Andy - Summer theme_ Frutiger Aero.mp3-03d2ac627715b81ce44da0bb58652bf3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/radio/Quill Andy - Summer theme_ Frutiger Aero.mp3"
+dest_files=["res://.godot/imported/Quill Andy - Summer theme_ Frutiger Aero.mp3-03d2ac627715b81ce44da0bb58652bf3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

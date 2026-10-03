@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dmkg50rmlvxlc"]
+
+[ext_resource type="Script" uid="uid://6ece3uak850o" path="res://resources/ItemData.gd" id="1_hao8v"]
+
+[resource]
+script = ExtResource("1_hao8v")
+item_id = "tool_multimeter"
+display_name = "Цифровой мультиметр"
+description = "Автоматически подсвечивает сломанные элементы и точный вольтаж цепи"
+price = 400
+metadata/_custom_type_script = "uid://6ece3uak850o"

@@ -1,0 +1,404 @@
+[gd_scene format=3 uid="uid://dl0e2vgiwsyxx"]
+
+[ext_resource type="Script" uid="uid://2fmws2cukyw2" path="res://scripts/nodes/click_manager.gd" id="1_r10ri"]
+[ext_resource type="Script" uid="uid://b14okt1wsrvdx" path="res://scripts/nodes/device.gd" id="2_lpr06"]
+[ext_resource type="Script" uid="uid://de6krjjibqcml" path="res://scripts/nodes/order_spawner.gd" id="3_h8avl"]
+[ext_resource type="Script" uid="uid://d054pdsf57gf2" path="res://scripts/nodes/money_display.gd" id="4_76iw1"]
+[ext_resource type="Script" uid="uid://tya66mb2fe5l" path="res://scripts/nodes/pc.gd" id="5_3cdmr"]
+[ext_resource type="Script" uid="uid://dxoh7q3oq76md" path="res://scripts/nodes/mail_panel.gd" id="6_trflx"]
+[ext_resource type="Script" uid="uid://b35e11kgqbk8e" path="res://scripts/nodes/market_panel.gd" id="7_jddhw"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_r10ri"]
+size = Vector3(2, 0.2, 1.5)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_lpr06"]
+size = Vector2(2, 1.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_76iw1"]
+size = Vector3(0.45, 0.03, 0.65)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g4v7s"]
+size = Vector3(0.45, 0.03, 0.65)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3cdmr"]
+albedo_color = Color(0.11764706, 0.42745098, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_trflx"]
+size = Vector3(0.35, 0.02, 0.55)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jddhw"]
+size = Vector3(0.15, 0.03, 0.15)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yf5fn"]
+size = Vector3(0.15, 0.03, 0.15)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_yf5fn"]
+top_radius = 0.08
+bottom_radius = 0.08
+height = 0.04
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ycuoy"]
+top_radius = 0.06
+bottom_radius = 0.06
+height = 0.04
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_g4v7s"]
+height = 0.04
+radius = 0.060546875
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_1sjal"]
+top_radius = 0.2
+bottom_radius = 0.2
+height = 1.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_yf5fn"]
+height = 1.0
+radius = 0.2
+
+[sub_resource type="BoxMesh" id="BoxMesh_g4v7s"]
+size = Vector3(0.5, 0.2, 0.05)
+
+[sub_resource type="BoxMesh" id="BoxMesh_yf5fn"]
+size = Vector3(0.4, 0.35, 0.3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_57qmd"]
+size = Vector3(0.4, 0.35, 0.3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jddhw"]
+bg_color = Color(0.24780053, 0.24780053, 0.24780053, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.48452926, 1, 0.58383155, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g4v7s"]
+bg_color = Color(0.24780053, 0.24780053, 0.24780053, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.48452926, 1, 0.58383155, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="workbench_v2" type="Node3D" unique_id=1313429611]
+
+[node name="Camera" type="Camera3D" parent="." unique_id=771254848]
+transform = Transform3D(1, 0, 0, 0, 0.81915206, 0.57357645, 0, -0.57357645, 0.81915206, 0, 1.15, 1.4)
+current = true
+fov = 50.0
+script = ExtResource("1_r10ri")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1014643471]
+transform = Transform3D(1, 0, 0, 0, 0.25881907, 0.9659258, 0, -0.9659258, 0.25881907, 0, 2.1, 0.2)
+light_color = Color(1, 0.8784314, 0.69803923, 1)
+light_energy = 1.5
+shadow_enabled = true
+spot_range = 2.5
+spot_angle = 35.0
+
+[node name="Table" type="MeshInstance3D" parent="." unique_id=154572323]
+mesh = SubResource("BoxMesh_r10ri")
+
+[node name="TableTop" type="MeshInstance3D" parent="Table" unique_id=1466665932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.11, 0)
+mesh = SubResource("PlaneMesh_lpr06")
+
+[node name="Device" type="Node3D" parent="." unique_id=957565626]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.119, 0)
+script = ExtResource("2_lpr06")
+
+[node name="Cover" type="MeshInstance3D" parent="Device" unique_id=782802602]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.019999996, 0)
+mesh = SubResource("BoxMesh_76iw1")
+
+[node name="CoverBody" type="StaticBody3D" parent="Device/Cover" unique_id=2145940703]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Device/Cover/CoverBody" unique_id=2019993841]
+shape = SubResource("BoxShape3D_g4v7s")
+
+[node name="Board" type="MeshInstance3D" parent="Device" unique_id=214753865]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.01, 0)
+visible = false
+material_overlay = SubResource("StandardMaterial3D_3cdmr")
+mesh = SubResource("BoxMesh_trflx")
+
+[node name="BatterySocket" type="MeshInstance3D" parent="Device" unique_id=769229880]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08, 0.019999996, 0)
+visible = false
+mesh = SubResource("BoxMesh_jddhw")
+
+[node name="SocketBody" type="StaticBody3D" parent="Device/BatterySocket" unique_id=1553492610]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Device/BatterySocket/SocketBody" unique_id=2147380096]
+shape = SubResource("BoxShape3D_yf5fn")
+
+[node name="BatteryMesh" type="MeshInstance3D" parent="Device/BatterySocket" unique_id=192909586]
+visible = false
+mesh = SubResource("CylinderMesh_yf5fn")
+
+[node name="Screw1" type="MeshInstance3D" parent="Device" unique_id=1509011949]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14, 0.026000008, -0.24234465)
+mesh = SubResource("CylinderMesh_ycuoy")
+
+[node name="ScrewBody1" type="StaticBody3D" parent="Device/Screw1" unique_id=760673695]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Device/Screw1/ScrewBody1" unique_id=607073144]
+shape = SubResource("CylinderShape3D_g4v7s")
+
+[node name="Screw2" type="MeshInstance3D" parent="Device" unique_id=942073055]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14, 0.026000008, -0.243)
+mesh = SubResource("CylinderMesh_ycuoy")
+
+[node name="ScrewBody2" type="StaticBody3D" parent="Device/Screw2" unique_id=450918961]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Device/Screw2/ScrewBody2" unique_id=1121520345]
+shape = SubResource("CylinderShape3D_g4v7s")
+
+[node name="Screw3" type="MeshInstance3D" parent="Device" unique_id=453839480]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14, 0.026000008, 0.24)
+mesh = SubResource("CylinderMesh_ycuoy")
+
+[node name="ScrewBody3" type="StaticBody3D" parent="Device/Screw3" unique_id=1920637398]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Device/Screw3/ScrewBody3" unique_id=2117864146]
+shape = SubResource("CylinderShape3D_g4v7s")
+
+[node name="Screw4" type="MeshInstance3D" parent="Device" unique_id=1587284234]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.147, 0.026000008, 0.24)
+mesh = SubResource("CylinderMesh_ycuoy")
+
+[node name="ScrewBody4" type="StaticBody3D" parent="Device/Screw4" unique_id=1125063148]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Device/Screw4/ScrewBody4" unique_id=209378211]
+shape = SubResource("CylinderShape3D_g4v7s")
+
+[node name="PneumoTube" type="Node3D" parent="." unique_id=1389323739]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PneumoTube" unique_id=1909396932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0.6, 0.1)
+mesh = SubResource("CylinderMesh_1sjal")
+
+[node name="FunnelPos" type="Marker3D" parent="PneumoTube" unique_id=1871950202]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75024474, 0.14701074, 0.109440684)
+
+[node name="TubeBody" type="StaticBody3D" parent="PneumoTube" unique_id=899527588]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7474247, 0, 0.10223831)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PneumoTube/TubeBody" unique_id=1536189532]
+shape = SubResource("CylinderShape3D_yf5fn")
+
+[node name="OrderSpawner" type="Node3D" parent="." unique_id=829806125]
+script = ExtResource("3_h8avl")
+
+[node name="SpawnTimer" type="Timer" parent="OrderSpawner" unique_id=419555777]
+wait_time = 2.5
+one_shot = true
+
+[node name="MoneyDisplay" type="Node3D" parent="." unique_id=1446444138]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.21, -0.5)
+script = ExtResource("4_76iw1")
+
+[node name="ClockMesh" type="MeshInstance3D" parent="MoneyDisplay" unique_id=897108352]
+mesh = SubResource("BoxMesh_g4v7s")
+
+[node name="BalanceLabel" type="Label3D" parent="MoneyDisplay" unique_id=612075337]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.05)
+pixel_size = 0.002
+billboard = 1
+modulate = Color(1, 0.95468724, 0.48452926, 1)
+text = "$100"
+font_size = 64
+
+[node name="PC" type="Node3D" parent="." unique_id=810118516]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0.21, -0.3)
+script = ExtResource("5_3cdmr")
+
+[node name="PCMesh" type="MeshInstance3D" parent="PC" unique_id=1705158211]
+mesh = SubResource("BoxMesh_yf5fn")
+
+[node name="PCBody" type="StaticBody3D" parent="PC/PCMesh" unique_id=1013349656]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PC/PCMesh/PCBody" unique_id=1789592699]
+shape = SubResource("BoxShape3D_57qmd")
+
+[node name="OSPanel" type="CanvasLayer" parent="." unique_id=1155709921]
+
+[node name="Background" type="ColorRect" parent="OSPanel" unique_id=1018530620]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.9647059)
+
+[node name="TitleLabel" type="Label" parent="OSPanel" unique_id=270261849]
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 192.0
+offset_bottom = 73.0
+offset_transform_enabled = true
+theme_override_colors/font_color = Color(0.48452926, 1, 0.58383155, 1)
+theme_override_font_sizes/font_size = 32
+text = "[GLITCHIE OS v0.1]"
+
+[node name="DialogLabel" type="Label" parent="OSPanel" unique_id=1636110271]
+offset_left = 50.0
+offset_top = 200.0
+offset_right = 1230.0
+offset_bottom = 400.0
+theme_override_colors/font_color = Color(0.4862745, 1, 0.58431375, 1)
+theme_override_font_sizes/font_size = 20
+text = "[Глитчи]: ..."
+autowrap_mode = 2
+
+[node name="NameEdit" type="LineEdit" parent="OSPanel" unique_id=1025307610]
+offset_left = 1030.0
+offset_top = 50.0
+offset_right = 1230.0
+offset_bottom = 90.0
+text = "Глитчи"
+placeholder_text = "Глитчи"
+
+[node name="MailButton" type="Button" parent="OSPanel" unique_id=537141873]
+offset_left = 50.0
+offset_top = 620.0
+offset_right = 200.0
+offset_bottom = 660.0
+theme_override_font_sizes/font_size = 18
+text = "📬 Почта"
+
+[node name="MailPanel" type="Panel" parent="OSPanel" unique_id=474274595]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_jddhw")
+script = ExtResource("6_trflx")
+
+[node name="MailTitle" type="Label" parent="OSPanel/MailPanel" unique_id=1965194377]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 100.0
+offset_right = 132.0
+offset_bottom = 123.0
+theme_override_colors/font_color = Color(0.4862745, 1, 0.58431375, 1)
+theme_override_font_sizes/font_size = 28
+text = "📬 ПОЧТА"
+
+[node name="MailList" type="VBoxContainer" parent="OSPanel/MailPanel" unique_id=1594682106]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 180.0
+offset_right = 450.0
+offset_bottom = 680.0
+
+[node name="MailContent" type="RichTextLabel" parent="OSPanel/MailPanel" unique_id=1577408191]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 180.0
+offset_right = 1200.0
+offset_bottom = 580.0
+theme_override_colors/default_color = Color(0.4862745, 1, 0.58431375, 1)
+theme_override_font_sizes/normal_font_size = 18
+bbcode_enabled = true
+fit_content = true
+scroll_following = true
+
+[node name="AcceptButton" type="Button" parent="OSPanel/MailPanel" unique_id=1553406573]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 600.0
+offset_right = 700.0
+offset_bottom = 650.0
+theme_override_font_sizes/font_size = 20
+disabled = true
+text = "Принять заказ"
+
+[node name="MailCloseButton" type="Button" parent="OSPanel/MailPanel" unique_id=67805915]
+layout_mode = 0
+offset_left = 1100.0
+offset_top = 50.0
+offset_right = 1220.0
+offset_bottom = 90.0
+text = "Закрыть"
+
+[node name="MarketButton" type="Button" parent="OSPanel" unique_id=342663088]
+offset_left = 50.0
+offset_top = 670.0
+offset_right = 210.0
+offset_bottom = 710.0
+theme_override_font_sizes/font_size = 18
+text = "🛒 Маркетплейс"
+
+[node name="MarketPanel" type="Panel" parent="OSPanel" unique_id=1762802209]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_g4v7s")
+script = ExtResource("7_jddhw")
+
+[node name="MarketTitle" type="Label" parent="OSPanel/MarketPanel" unique_id=160112049]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 100.0
+offset_right = 273.0
+offset_bottom = 123.0
+theme_override_colors/font_color = Color(0.48677072, 1, 0.5847179, 1)
+theme_override_font_sizes/font_size = 28
+text = "🛒 ДАРКНЕТ-МАРКЕТПЛЕЙС"
+
+[node name="BalanceLabel" type="Label" parent="OSPanel/MarketPanel" unique_id=2146023787]
+layout_mode = 0
+offset_left = 1000.0
+offset_top = 100.0
+offset_right = 1060.0
+offset_bottom = 123.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 22
+text = "💰 $100"
+
+[node name="ItemList" type="VBoxContainer" parent="OSPanel/MarketPanel" unique_id=2122655436]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 180.0
+offset_right = 550.0
+offset_bottom = 680.0
+
+[node name="ItemContent" type="RichTextLabel" parent="OSPanel/MarketPanel" unique_id=587581587]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 180.0
+offset_right = 1200.0
+offset_bottom = 480.0
+theme_override_colors/default_color = Color(0.48452926, 1, 0.58383155, 1)
+theme_override_font_sizes/normal_font_size = 18
+bbcode_enabled = true
+
+[node name="BuyButton" type="Button" parent="OSPanel/MarketPanel" unique_id=979091591]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 500.0
+offset_right = 800.0
+offset_bottom = 550.0
+disabled = true
+text = "Купить"
+
+[node name="MarketCloseButton" type="Button" parent="OSPanel/MarketPanel" unique_id=1859567974]
+layout_mode = 0
+offset_left = 1100.0
+offset_top = 50.0
+offset_right = 1220.0
+offset_bottom = 90.0
+text = "Закрыть"

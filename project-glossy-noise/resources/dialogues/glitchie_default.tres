@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GlitchieDialogue" format=3 uid="uid://ddnssgmgg27f0"]
+
+[ext_resource type="Script" uid="uid://b7uigf3vasx24" path="res://resources/GlitchieDialogue.gd" id="1_bki2v"]
+
+[resource]
+script = ExtResource("1_bki2v")
+dialogue_id = "default"
+phrases_low_stress = Array[String](["О, живой. Я уж думал, ты забыл про меня.", "Новый заказ. Посмотрим, что там на этот раз.", "Эй, не забудь проверить контакты. А то знаю я тебя."])
+phrases_mid_stress = Array[String](["Ты какой-то напряжённый. Может, перекур?", "У тебя руки дрожат. Может, отложишь паяльник?"])
+phrases_high_stress = Array[String](["Мои окна сами закрываются. Я не делаю этого. Честно.", "Оно смотрит на тебя. Не оборачивайся. Просто не оборачивайся."])
+anomalous_reactions = Array[String](["Он... смотрит на меня. Убери его. Пожалуйста."])
+rename_refusals = Array[String](["Петя? Серьёзно? Нет. Я Глитчи. И это не обсуждается.", "Комп? Это то, что у тебя на столе. Я — Глитчи.", "Бот? Я, между прочим, личность. Глитчи. Запомни.", "Ассистент — это должность. Меня зовут Глитчи.", "Ошибка 404: Уважение не найдено. Я — Глитчи.", "Серьёзно? Назови так свой чайник. А я — Глитчи."])
+repair_success = Array[String](["Неплохо. Даже я бы так не смог. Ну, я бы смог. Но ты молодец."])
+repair_fail = Array[String](["...Ну, бывает. Попробуй ещё раз. Только не сломай окончательно."])
+metadata/_custom_type_script = "uid://b7uigf3vasx24"

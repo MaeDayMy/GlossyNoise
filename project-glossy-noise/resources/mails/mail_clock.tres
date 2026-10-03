@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MailData" format=3 uid="uid://bhcmvdr0ruc7b"]
+
+[ext_resource type="Script" uid="uid://dnq3u55ksoef6" path="res://resources/MailData.gd" id="1_fvxcy"]
+
+[resource]
+script = ExtResource("1_fvxcy")
+mail_id = "mail_clock"
+sender = "Аноним"
+subject = "Часы идут назад"
+body = "У меня электронные часы. Время идёт в обратную сторону. Я боюсь. Помоги, пока не стало поздно."
+device_id = "clock_countdown"
+reward = 150
+metadata/_custom_type_script = "uid://dnq3u55ksoef6"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="DeviceData" format=3 uid="uid://bpdtfstxingp0"]
+
+[ext_resource type="Script" uid="uid://bn42vd4a62esf" path="res://resources/FaultData.gd" id="1_or21e"]
+[ext_resource type="Script" uid="uid://5vdf6n5uhac4" path="res://resources/DeviceData.gd" id="2_g1new"]
+[ext_resource type="Resource" uid="uid://kyeionokotew" path="res://resources/faults/dead_battery.tres" id="2_na2ax"]
+
+[resource]
+script = ExtResource("2_g1new")
+device_id = "pager_mute"
+display_name = "Пейджер-Молчун"
+is_anomalous = true
+possible_faults = Array[ExtResource("1_or21e")]([ExtResource("2_na2ax")])
+metadata/_custom_type_script = "uid://5vdf6n5uhac4"

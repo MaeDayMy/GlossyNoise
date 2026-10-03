@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cy6um2huteteq"]
+
+[ext_resource type="Script" uid="uid://6ece3uak850o" path="res://resources/ItemData.gd" id="1_1a3oq"]
+
+[resource]
+script = ExtResource("1_1a3oq")
+item_id = "sumable_screwdriver"
+display_name = "Набор точных бит"
+description = "Магнитный коврик и точные биты. Ускоряет разборку."
+price = 200
+category = "consumable"
+metadata/_custom_type_script = "uid://6ece3uak850o"
