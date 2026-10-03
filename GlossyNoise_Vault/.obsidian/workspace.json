@@ -1,40 +1,24 @@
 {
   "main": {
-    "id": "c4a1e7bccf11125e",
+    "id": "b1c526dd89d3334d",
     "type": "split",
     "children": [
       {
-        "id": "bbf3117fa2a9ef61",
+        "id": "1c32df6c53f90f59",
         "type": "tabs",
         "children": [
           {
-            "id": "c86476ce62b22821",
+            "id": "3a0c565f7d9456f1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Добро пожаловать.md",
+                "file": "01_GDD/GDD.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Добро пожаловать"
-            }
-          }
-        ]
-      },
-      {
-        "id": "706072e03824af1f",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4b45c4303b386d1a",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Граф"
+              "title": "GDD"
             }
           }
         ]
@@ -43,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "0742d2ada89f8dd7",
+    "id": "a0bd50acbea20611",
     "type": "split",
     "children": [
       {
-        "id": "5fb1e9a1438f64e8",
+        "id": "7126c2a0465167ab",
         "type": "tabs",
         "children": [
           {
-            "id": "4f45b5f696770c7e",
+            "id": "1951d7d061c03fd1",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -66,7 +50,7 @@
             }
           },
           {
-            "id": "d2f36bda3e052bf5",
+            "id": "fe8c7038447f7ade",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -83,7 +67,7 @@
             }
           },
           {
-            "id": "b6e241a5d921a601",
+            "id": "b0044bdbc232b87b",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -102,20 +86,20 @@
     "width": 300
   },
   "right": {
-    "id": "1fb6c7112ff61711",
+    "id": "5d05255ea357eeef",
     "type": "split",
     "children": [
       {
-        "id": "45614609453d77a8",
+        "id": "c5253ecebce4dc1e",
         "type": "tabs",
         "children": [
           {
-            "id": "67d639b16237cffa",
+            "id": "296a092bcb1fd8fd",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Добро пожаловать.md",
+                "file": "заметки.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,12 +113,12 @@
             }
           },
           {
-            "id": "d19d2acee96a53f2",
+            "id": "834df99fe5e2ce69",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Добро пожаловать.md",
+                "file": "заметки.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -143,7 +127,7 @@
             }
           },
           {
-            "id": "45c16a0b97518ef3",
+            "id": "204281fef58540d2",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -158,7 +142,7 @@
             }
           },
           {
-            "id": "7811cd820f3296c4",
+            "id": "de6ded0e20c75200",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -172,12 +156,12 @@
             }
           },
           {
-            "id": "e4d1195fd10b6c7c",
+            "id": "15b1c28258867626",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Добро пожаловать.md",
+                "file": "заметки.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -201,11 +185,36 @@
       "daily-notes:Сегодняшняя заметка": false,
       "templates:Вставить шаблон": false,
       "command-palette:Открыть палитру команд": false,
-      "bases:Создать новую базу": false
+      "bases:Создать новую базу": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-kanban:Create new board": false
     }
   },
-  "active": "c86476ce62b22821",
+  "active": "3a0c565f7d9456f1",
   "lastOpenFiles": [
-    "Добро пожаловать.md"
+    "заметки.md",
+    "03_План/План.md",
+    "09_Мета/Шаблоны/DEVLOG.md",
+    "09_Мета/Шаблоны/POST.md",
+    "09_Мета/Шаблоны/IDEA.md",
+    "Без названия.md",
+    "01_GDD/GDD.md",
+    "09_Мета/Шаблоны",
+    "06_Аудио/Саунд-док.md",
+    "07_3D/Чек-лист 3D-моделей.md",
+    "09_Мета/Физ-дневники.md",
+    "08_Код/ТЗ-спецификация.md",
+    "05_Постинг/Постинг.md",
+    "02_Лор/Лор.md",
+    "04_Девлог/Девлог.md",
+    "09_Мета",
+    "08_Код",
+    "07_3D",
+    "06_Аудио",
+    "05_Постинг",
+    "04_Девлог",
+    "03_План",
+    "02_Лор",
+    "01_GDD"
   ]
 }
