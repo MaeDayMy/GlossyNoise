@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_GDD/GDD.md",
+                "file": "07_3D/Визуальный стиль.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GDD"
+              "title": "Визуальный стиль"
             }
           }
         ]
@@ -190,10 +190,11 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "3a0c565f7d9456f1",
+  "active": "1951d7d061c03fd1",
   "lastOpenFiles": [
+    "01_GDD/GDD.md",
     "03_План/План.md",
-    "07_3D/3D.md",
+    "07_3D/Визуальный стиль.md",
     "загруженное (18).jpg",
     "загруженное (17).jpg",
     "загруженное (19).jpg",
@@ -209,7 +210,6 @@
     "Без названия.md",
     "09_Мета/Воркфлоу.md",
     "02_Лор/Лор.md",
-    "01_GDD/GDD.md",
     "09_Мета/Шаблоны/DEVLOG.md",
     "09_Мета/Шаблоны/POST.md",
     "09_Мета/Шаблоны/IDEA.md",
