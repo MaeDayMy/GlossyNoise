@@ -218,10 +218,11 @@ text = "$100"
 font_size = 64
 
 [node name="PC" type="Node3D" parent="." unique_id=810118516]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0.21, -0.3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0.27980828, -0.3)
 script = ExtResource("5_3cdmr")
 
 [node name="PCMesh" type="MeshInstance3D" parent="PC" unique_id=1705158211]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.006, 0)
 mesh = SubResource("BoxMesh_yf5fn")
 
 [node name="PCBody" type="StaticBody3D" parent="PC/PCMesh" unique_id=1013349656]
