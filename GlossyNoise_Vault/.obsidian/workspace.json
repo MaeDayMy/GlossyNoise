@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_GDD/GDD.md",
+                "file": "07_3D/Визуальный стиль.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GDD"
+              "title": "Визуальный стиль"
             }
           }
         ]
@@ -192,10 +192,10 @@
   },
   "active": "3a0c565f7d9456f1",
   "lastOpenFiles": [
-    "09_Мета/AI_CONTEXT.md",
     "04_Девлог/Девлог.md",
-    "01_GDD/GDD.md",
+    "09_Мета/AI_CONTEXT.md",
     "03_План/Дорожная карта.md",
+    "01_GDD/GDD.md",
     "06_Аудио/Саунд-док.md",
     "09_Мета/Промпты_Перезапуска.md",
     "09_Мета/Воркфлоу.md",
